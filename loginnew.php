@@ -153,12 +153,9 @@ function getHtml($valUsername, $valPassword){
 
     $data = curl_exec($ch);
 
-    unlink($cookieFile);
-
-    // at this point the secured page may be parsed for
-    // values, or additional POSTS made to submit parameters
-    // and retrieve data.  For this sample, we'll just
-    // echo the results.
+    if(file_exists($cookieFile)){
+        unlink($cookieFile);
+    }
 
     /************************************************
      * that's it! Close the curl handle
