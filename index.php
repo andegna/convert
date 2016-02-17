@@ -9,7 +9,7 @@
         } else {
             die('Sorry thier was an error. Come back again');
         }
-        
+
         $courses = parse($html);
         $result = calculate($courses);
     }
@@ -93,6 +93,10 @@
                             <code>Step 2:</code> Login with your username and password<br/>
                             <code>Step 3:</code> Right Click and choose the <code>Save Page As</code> menu<br/>
                             <code>Step 4:</code> Come back here and Click the Convert Big Button<br/>
+                        </p>
+
+                        <p class="lead text-left">
+                            Or just visit <a href="no_save.php">Alternative Page</a>
                         </p>
                     <?php endif ?>
                     <p class="lead">
