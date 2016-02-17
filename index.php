@@ -1,7 +1,7 @@
 <?php require_once 'raw.php';
 
     if(isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] === 'POST') {
-        if(isset($_FILES['file'])) {
+        if(isset($_FILES['file']) || isset($_REQUEST['html'])) {
             $courses = parse();
             $result = calculate($courses);
         } else {
