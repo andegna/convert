@@ -35,16 +35,9 @@
         }
     }
 
-    function parse() {
+    function parse($html) {
         $courses = [];
-
-        if(isset($_FILES['file'])) {
-            $html = file_get_contents($_FILES['file']['tmp_name']);
-                unlink($_FILES['file']['tmp_name']);
-        } else if (isset($_REQUEST['html'])){
-            $html = $_REQUEST['html'];
-        }
-
+        
         if(isset($html)){
             $dom = str_get_html($html);
             foreach($dom->find('table.ob_gBody tr') as $courseNode) {
