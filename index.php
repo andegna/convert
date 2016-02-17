@@ -96,7 +96,7 @@
                         </p>
 
                         <p class="lead text-left">
-                            Or just visit <a href="no_save.php">Alternative Page</a>
+                            Or just visit <a href="no_save.php">Alternative Page</a> (recommended for mobile users)
                         </p>
                     <?php endif ?>
                     <p class="lead">

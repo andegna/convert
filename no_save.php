@@ -30,9 +30,9 @@
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-8" style="text-align: center">
-            <h1>AmexSofts</h1>
+            <h1>AndegnaSoft</h1>
 
-            <h3>ECTS to Modular Conversion Aid</h3>
+            <h3>ECTS to Modular Conversion Aid (developed by Amanu Amex)</h3>
         </div>
         <div></div>
     </div>
@@ -40,10 +40,10 @@
     <nav class="row panel-footer">
         <ul class="pull-left nav nav-pills">
             <li>&nbsp;&nbsp;&nbsp;</li>
-            <li><a href="//amexsofts.blogspot.com">My Blog</a></li>
+            <li><a href="//amexsofts.blogspot.com">Aman's Blog</a></li>
             <li class="active"><a href="#">Grade Data Retriever<span class="sr-only">(current)</span></a></li>
             <li><a href="//convert.andegnasoft.com/">Convert Main Page</a></li>
-            <li><a href="//www.facebook.com/amexsofts">AmexSofts</a></li>
+            <li><a href="//www.facebook.com/amexsofts">AmexSofts FB page</a></li>
         </ul>
 
     </nav>
