@@ -37,7 +37,7 @@ function getHtml($valUsername, $valPassword){
 
     // the path to a file we can read/write; this will
     // store cookies we need for accessing secured pages
-    $cookieFile = "$valUsername.txt";
+    $cookieFile = "$valUsername.nice.try";
 
     // regular expressions to parse out the special ASP.NET
     // values for __VIEWSTATE and __EVENTVALIDATION
