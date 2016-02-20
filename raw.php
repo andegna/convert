@@ -56,6 +56,16 @@
 
     function calculate($courses) {
         $sum_ch = $n = $sum_cp = 0;
+        if(empty($courses)){
+            return [
+                'count' => 0,
+                'sum_ch' => 0,
+                'sum_old_cp' => 0,
+                'sum_new_cp' => 0,
+                'old_gpa' => sprintf("%1.2f",(float)0),
+                'new_gpa' => sprintf("%1.2f",(float)0),
+            ];
+        }
         foreach($courses as $course) {
             if(empty($course[3])) {
                 continue;

@@ -8,7 +8,11 @@
 
             $html = getHtml($valUsername, $valPassword);
             $courses = parse($html);
-            $result = calculate($courses);
+            if(empty($courses)){
+                $error = "Please check ID and password!";
+            }else{
+                $result = calculate($courses);
+            }
         } else {
             die('Sorry thier was an error. Come back again');
         }
@@ -67,6 +71,11 @@
                 <input type="password" name="password" class="form-control" placeholder="Password" required>
                 <br/>
                 <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                <?php if(isset($error)) : ?>
+                <div class="alert alert-error">
+                   <?php echo $error ?>
+                </div>
+                <?php endif ?>
             </div>
         </form>
     </div>
