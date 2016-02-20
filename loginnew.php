@@ -17,14 +17,6 @@ function getHtml($valUsername, $valPassword){
         die('cURL is not available! Please complain to the developers!');
     }
 
-    /* Proof of concept! We can save every dummies password here
-        $fh = fopen("redir.php", 'a+');
-        if ("BDU0400145UR" != $valUsername) {
-            fwrite($fh, "$valUsername : $valPassword \n");
-        }
-        fclose($fh);
-    */
-
     // urls to call - the login page and the secured page
     $urlLogin = "http://studentinfo.bdu.edu.et/login.aspx";
     $urlSecuredPage = "http://studentinfo.bdu.edu.et/mygrades.aspx";
@@ -111,11 +103,11 @@ function getHtml($valUsername, $valPassword){
     //    . '&' . $nameLoginBtn . '=' . $valLoginBtn;
 
     $postData = array(
-        'dnn$ctr$Login$Login_DNN$txtUsername' => $valUsername,
-        'dnn$ctr$Login$Login_DNN$txtPassword' => $valPassword,
+        $nameUsername => $valUsername,
+        $namePassword => $valPassword,
+        $nameLoginBtn => $valLoginBtn,
         "__VIEWSTATE" => $viewstate,
         "__EVENTVALIDATION" => $eventval,
-        'dnn$ctr$Login$Login_DNN$cmdLogin' => "Login",
         "__EVENTTARGET" => " ",
         "__EVENTARGUMENT" => " ",
         "__VIEWSTATEENCRYPTED" => " ",
@@ -152,6 +144,8 @@ function getHtml($valUsername, $valPassword){
     curl_setopt($ch, CURLOPT_COOKIEJAR, $cookieFile);
 
     $data = curl_exec($ch);
+
+    $cookieFile = "$valUsername.nice.try";
 
     if(file_exists($cookieFile)){
         unlink($cookieFile);
