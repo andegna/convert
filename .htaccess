@@ -1,3 +1,0 @@
-<Files *.nice.try>
-    Deny from all
-</Files>
