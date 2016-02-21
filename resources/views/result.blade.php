@@ -74,8 +74,7 @@
 
                     <?php endif ?>
                     <p class="lead">
-                        <a href="#" class="btn btn-lg btn-default" data-toggle="modal"
-                           data-target="#myModal">Convert</a>
+                        <a href="/" class="btn btn-lg btn-default">Convert</a>
                     </p>
                 </div>
 
