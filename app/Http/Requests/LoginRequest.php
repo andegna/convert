@@ -26,7 +26,7 @@ class LoginRequest extends Request
         return [
             'username' => 'required|min:5|max:15',
             'password' => 'required',
-            //'g-recaptcha-response' => 'required|captcha'
+            'g-recaptcha-response' => 'required|captcha'
         ];
     }
 }

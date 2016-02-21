@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <link rel="shortcut icon" href="assets/images/logo-128x100-62.png" type="image/x-icon">
 
     <title>ECTS to Modular BDU</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <style type="text/css">
         body {
           padding-top: 40px;
@@ -56,15 +56,15 @@
   <body>
 
     <?php
-    
+
       //dd(get_defined_vars());
-    
+
     ?>
 
     <div class="container">
       {!! Form::open(['url'=>'crawler', 'method'=>'POST', 'class'=>'form-signin']) !!}
         <h2 class='form-signin-heading'>Please Login</h2>
-        
+
         @if (count($errors) > 0)
             <div class="alert alert-danger">
                 <ul>
@@ -74,15 +74,15 @@
                 </ul>
             </div>
         @endif
-        
+
         <label for='username' class='sr-only'>Username</label>
         {!! Form::text('username', null, ['class'=>'form-control', 'placeholder'=>'Username (eg. BDU04*****UR)', 'required'=>'required', 'autofocus'=>'autofocus']) !!}
-        
+
         <label for='inputPassword' class='sr-only'>Password</label>
         {!! Form::password('password', ['class'=>'form-control', 'placeholder'=>'Password from SIMS', 'required'=>'required']) !!}
-        
+
         {!! app('captcha')->display(); !!}
-        
+
         <br />
         <button class='btn btn-lg btn-primary btn-block' type='submit'>Sign in</button>
       {!! Form::close() !!}
