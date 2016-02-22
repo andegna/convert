@@ -80,7 +80,7 @@
 
                 <div class="mastfoot">
                     <div class="inner">
-                        <p>Developed by <a href="mailto:sam@andegnasoft.com">Sam As End</a> and <a href="mailto:wende@andegnasoft.com">Gebre</a>.</p>
+                        <p>Developed by <a href="mailto:sam@andegnasoft.com">Sam As End</a> and <a href="mailto:wende@andegnasoft.com">Gebre</a> and  <a href="mailto:negaamanuel@gmail.com">Amanu</a>.</p>
                     </div>
                 </div>
             </div>
