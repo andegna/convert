@@ -55,13 +55,21 @@
 
   <body>
 
-    <?php
-
-      //dd(get_defined_vars());
-
-    ?>
-
+    <ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2386666437580430"
+     data-ad-slot="9569972304"></ins>
+    
+    <br />
+    
+    
+    
     <div class="container">
+      <ins class="adsbygoogle"
+         style="display:inline-block;width:300px;height:600px"
+         data-ad-client="ca-pub-2386666437580430"
+         data-ad-slot="8093239106"></ins>
+
       {!! Form::open(['url'=>'crawler', 'method'=>'POST', 'class'=>'form-signin']) !!}
         <h2 class='form-signin-heading'>Please Login</h2>
 
@@ -86,10 +94,20 @@
         <br />
         <button class='btn btn-lg btn-primary btn-block' type='submit'>Sign in</button>
       {!! Form::close() !!}
+      
+      <ins class="adsbygoogle"
+         style="display:inline-block;width:300px;height:600px"
+         data-ad-client="ca-pub-2386666437580430"
+         data-ad-slot="6616505902"></ins>
     </div>
 
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 </body>
 </html>
