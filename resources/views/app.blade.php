@@ -1,113 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="shortcut icon" href="assets/images/logo-128x100-62.png" type="image/x-icon">
-
-    <title>ECTS to Modular BDU</title>
-
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet">
-
-    <style type="text/css">
+<html>
+<head>
+    <title>Service stopped</title>
+    <style>
         body {
-          padding-top: 40px;
-          padding-bottom: 40px;
-          background-color: #eee;
+            background-color: #999;
         }
-        .form-signin {
-          max-width: 330px;
-          padding: 15px;
-          margin: 0 auto;
+
+        div {
+            max-width: 500px;
+            margin: auto auto;
+            padding-top: 100px
         }
-        .form-signin .form-signin-heading,
-        .form-signin .checkbox {
-          margin-bottom: 10px;
-        }
-        .form-signin .checkbox {
-          font-weight: normal;
-        }
-        .form-signin .form-control {
-          position: relative;
-          height: auto;
-          -webkit-box-sizing: border-box;
-                  box-sizing: border-box;
-          padding: 10px;
-          font-size: 16px;
-        }
-        .form-signin .form-control:focus {
-          z-index: 2;
-        }
-        .form-signin input[type="text"] {
-          margin-bottom: -1px;
-          border-bottom-right-radius: 0;
-          border-bottom-left-radius: 0;
-        }
-        .form-signin input[type="password"] {
-          margin-bottom: 10px;
-          border-top-left-radius: 0;
-          border-top-right-radius: 0;
+
+        h2 {
+            font-family: Tahoma;
         }
     </style>
-  </head>
+</head>
+<body>
 
-  <body>
-
-    <ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-2386666437580430"
-     data-ad-slot="9569972304"></ins>
-    
-    <br />
-    
-    
-    
-    <div class="container">
-      <ins class="adsbygoogle"
-         style="display:inline-block;width:300px;height:600px"
-         data-ad-client="ca-pub-2386666437580430"
-         data-ad-slot="8093239106"></ins>
-
-      {!! Form::open(['url'=>'crawler', 'method'=>'POST', 'class'=>'form-signin']) !!}
-        <h2 class='form-signin-heading'>Please Login</h2>
-
-        @if (count($errors) > 0)
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{!! $error !!}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
-
-        <label for='username' class='sr-only'>Username</label>
-        {!! Form::text('username', null, ['class'=>'form-control', 'placeholder'=>'Username (eg. BDU04*****UR)', 'required'=>'required', 'autofocus'=>'autofocus']) !!}
-
-        <label for='inputPassword' class='sr-only'>Password</label>
-        {!! Form::password('password', ['class'=>'form-control', 'placeholder'=>'Password from SIMS', 'required'=>'required']) !!}
-
-        {!! app('captcha')->display(); !!}
-
-        <br />
-        <button class='btn btn-lg btn-primary btn-block' type='submit'>Sign in</button>
-      {!! Form::close() !!}
-      
-      <ins class="adsbygoogle"
-         style="display:inline-block;width:300px;height:600px"
-         data-ad-client="ca-pub-2386666437580430"
-         data-ad-slot="6616505902"></ins>
-    </div>
-
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
-    
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+<div style="">
+    <h2>This service has been stopped.</h2>
+    <p>
+        First of all we would like to inform you that our service is NOT authorized by Bahir Dar University and the
+        university doesn't know about this application.
+    </p>
+    <p>
+        We developed this application out of curiosity without thinking about the legal framework.
+    </p>
+    <p>
+        <b>And</b> grade conversion is possible ONLY after graduation.
+    </p>
+    <p>
+        Therefore :) We can't be liable for any conversion errors you found on this application. Especially for those of
+        you who have an incorrect conversion result because of your add and drop course.
+    </p>
+    <p>
+        Please wait until your graduation to get your converted grade.
+    </p>
+    <p>
+        Thanks and Congratulations.
+    </p>
+</div>
 </body>
 </html>
